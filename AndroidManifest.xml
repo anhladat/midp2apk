@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="2000" android:versionName="1.0.2" package="com.netmite.andme.launcher.application" android.sharedUserId="com.netmite.andme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="1" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:label="AppName" android:icon="@drawable/icon">
+        <activity android:label="AppName" android:icon="@drawable/icon" android:name="MainMIDlet">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="midleturl" android:value="http://www.netmite.com/android/srv/2.0/upload/application.jad" />
+            <meta-data android:name="midletname" android:value="AppName" />
+            <meta-data android:name="midleticon" android:value="/icon.png" />
+            <meta-data android:name="midletclass" android:value="MainMIDlet" />
+            <meta-data android:name="launcherversion" android:value="2.0" />
+            <meta-data android:name="launcherversioncode" android:value="2000" />
+        </activity>
+    </application>
+</manifest>
